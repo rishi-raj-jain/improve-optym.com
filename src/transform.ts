@@ -18,7 +18,6 @@ export default function transformResponse(response: Response, request: Request) 
         $(ele).remove()
         $('body').append(temp)
       })
-      $('head').append(`<link href="/ltl" rel="prefetch" />`)
       $('head link[href*="googleapis"]').each((i, el) => {
         let temp = $(el)
         temp.attr('media', 'print')
